@@ -2,16 +2,16 @@
 
 $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$textcolor: #121212 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-$roboto: Roboto, sans-serif // Roboto Font Family
+$roboto: "MyriadPro", sans-serif //  Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px
 $gutter: $grid-gutter-width
 
 $minWidth: 320px 	
-$maxWidthContainer: 1180
+$maxWidthContainer: 1583
 $maxWidth: 1920
 $md1: $maxWidthContainer + 12
 $md2: 991.98
@@ -46,14 +46,18 @@ $md4: 479.98
 		// font-display: swap // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff'), url($furl_2) format('woff2')
 		    
+@include font('MyriadPro', normal, 400, '../fonts/MyriadPro/MyriadPro-Regular.woff', '../fonts/MyriadPro/MyriadPro-Regular.woff2')
 
-@include font('Roboto', normal, 700, '../fonts/Roboto/Roboto-Bold.woff', '../fonts/Roboto/Roboto-Bold.woff2')
-@include font('Roboto', italic, 700, '../fonts/Roboto/Roboto-BoldItalic.woff', '../fonts/Roboto/Roboto-BoldItalic.woff2')
-@include font('Roboto', italic, 400, '../fonts/Roboto/Roboto-Italic.woff', '../fonts/Roboto/Roboto-Italic.woff2')
-@include font('Roboto', normal, 400, '../fonts/Roboto/Roboto-Regular.woff', '../fonts/Roboto/Roboto-Regular.woff2')
-@include font('Roboto', normal, 800, '../fonts/Roboto/Roboto-Black.woff', '../fonts/Roboto/Roboto-Black.woff2')
+@include font('MyriadProEx', normal, 400, '../fonts/MyriadProSemiExtended/MyriadPro-SemiExt.woff', '../fonts/MyriadProSemiExtended/MyriadPro-SemiExt.woff2')
+@include font('MyriadProEx', normal, 200, '../fonts/MyriadProSemiExtended/MyriadPro-LightSemiExt.woff', '../fonts/MyriadProSemiExtended/MyriadPro-LightSemiExt.woff2')
 
-@include font('Play', normal, 700, '../fonts/play/play-bold.woff', '../fonts/play/play-bold.woff2')
+// @include font('Roboto', normal, 700, '../fonts/Roboto/Roboto-Bold.woff', '../fonts/Roboto/Roboto-Bold.woff2')
+// @include font('Roboto', italic, 700, '../fonts/Roboto/Roboto-BoldItalic.woff', '../fonts/Roboto/Roboto-BoldItalic.woff2')
+// @include font('Roboto', italic, 400, '../fonts/Roboto/Roboto-Italic.woff', '../fonts/Roboto/Roboto-Italic.woff2')
+// @include font('Roboto', normal, 400, '../fonts/Roboto/Roboto-Regular.woff', '../fonts/Roboto/Roboto-Regular.woff2')
+// @include font('Roboto', normal, 800, '../fonts/Roboto/Roboto-Black.woff', '../fonts/Roboto/Roboto-Black.woff2')
+
+// @include font('Play', normal, 700, '../fonts/play/play-bold.woff', '../fonts/play/play-bold.woff2')
 
 // For example mixin font
 
@@ -83,6 +87,9 @@ input, textarea
 	&:required:valid
 		border-color: green
 
+*
+	box-sizing: border-box
+
 html 
 	height: 100%
 
@@ -90,7 +97,7 @@ body
 	height: 100%
 	font-family: $roboto
 	font-size: $fontsize
-	font-weight: normal
+	font-weight: 400
 	min-width: 320px
 	position: relative
 	line-height: 1.42
