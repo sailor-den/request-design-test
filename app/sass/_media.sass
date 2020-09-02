@@ -1,0 +1,228 @@
+@media (min-width: $md2+px)
+    .menu
+        &__link
+            &:hover
+                border-radius: 20px
+                background-color: #068292
+                color: #ffffff
+
+    .actions-header
+            &__item
+                &:hover
+                    color: #1ab9ce
+
+    .contacts-header
+        &__column
+            border-left: 1px solid #fff 
+            &:first-child
+                border: none
+    
+
+
+@media (min-width: $md3+px)  
+    .top-header
+        &__column
+            &_logo
+                align-self: flex-start
+                padding: 25px 0px 0px 0px
+
+
+
+@media (max-width: $maxWidthContainer+px)
+    .actions-header
+        li 
+            margin: 0px 30 / $maxWidthContainer * 100vw 0px 0px
+
+    .info-header
+        &__column
+            padding: 0px 30 / $maxWidthContainer * 100vw 0px 0px
+
+
+
+@media (max-width: $md1+px)
+    .actions-header
+        &__item
+            padding: 0px 0px 0px 30px
+    .menu
+        &__list
+            grid-template-columns: 90px 110px 160px   
+        &__link
+            padding: 5px 10px
+        
+    .info-header
+        &__callback
+            background: none
+            padding: 0
+        &__schedule
+            background: none
+            padding: 0
+        &__cart
+            span
+                right: -10px
+        
+    .contacts-header
+        &__column
+            padding: 0px 15px
+        &__item
+            &_icon
+                padding: 0px 0px 0px 25px
+                background-size: 15px
+        &__phone
+            font-size: 16px
+          
+
+
+@media (max-width: $md2+px)
+    .menu
+        &__item
+            margin: 0px 0px 20px 0px 
+        &__list
+            display: block
+        &__link
+            color: #000000
+            padding: 0
+            font-size: 20px
+        &__body
+            opacity: 0
+            position: fixed
+            height: 100%
+            width: 100%
+            top: 0
+            left: 0
+            visibility: hidden
+            overflow: auto
+            z-index: 2
+            padding: 120px 20px 30px 20px
+            transition: all 0.3s ease 0s
+            background-color: #ffffff
+            &::before
+                content: ''
+                position: fixed
+                width: 100%
+                height: 105px
+                top: 0
+                left: 0 
+                z-index: 3
+                background-color: #14c0d4
+            &_active
+                opacity: 1
+                visibility: visible
+            
+    .icon-menu
+        display: block
+        width: 30px
+        position: relative
+        height: 18px
+        cursor: pointer
+        z-index: 5
+        span 
+            transition: all 0.3s ease 0s 
+            top: calc( 50% - 1px )
+            left: 0
+            position: absolute
+            width: 100%
+            height: 2px
+            background-color: #fff 
+            &:first-child
+                top: 0
+            &:last-child
+                top: auto
+                bottom: 0
+        &_active
+            span 
+                transform: scale(0)
+                &:first-child
+                    transform: rotate(-45deg)
+                    top: calc( 50% - 1px )
+                &:last-child
+                    transform: rotate(45deg)
+                    bottom: calc( 50% - 1px )
+
+    .actions-header
+        &__item
+            padding: 0
+            background: none
+
+    .info-header
+        &__schedule
+            display: none
+
+    .contacts-header
+        &__column
+            &:last-child
+                border: none
+        &__item
+            &_second-phone
+                display: none
+
+
+
+@media (max-width: $md3+px)
+    .header 
+        background: url('../images/bg_header.jpg') 0 -20px no-repeat
+
+    .top-header
+        &__content
+            height: 70px
+        &__logo 
+            width: 100px
+        
+    .contacts-header
+        justify-content: flex-end
+
+
+    .menu 
+        &__body
+            padding: 90px 20px 30px 20px
+            &::before
+                height: 70px
+
+
+
+
+@media (max-width: 640px)
+    .contacts-header
+        align-items: center
+        &__phone
+            background: url('../images/icons/header/phone.png') left no-repeat
+            width: 19px
+            height: 25px
+            display: inline-block
+            font-size: 0
+            vertical-align: middle
+            margin: 0px 10px 0px 0px
+        &__item
+            &_icon
+                background: none
+                padding: 0
+        &__label
+            display: none
+        &__column
+            padding: 0
+
+    .actions-header
+        justify-content: space-between
+        margin: 0px 0px 15px 0px
+
+    .info-header
+        &__cart
+            width: 40px
+            height: 40px
+            span 
+                font-size: 14px
+                padding: 0px 5px
+                line-height: 25px
+                right: -5px
+
+    .top-header
+        &__logo
+            width: 90px 
+
+    .container 
+        padding: 0px 10px
+
+    
+
+    
+        
+            
