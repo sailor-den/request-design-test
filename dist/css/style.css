@@ -329,7 +329,7 @@ p {
   margin: 0; }
 
 .container {
-  max-width: 1583px;
+  max-width: 1570px;
   margin: 0 auto;
   padding: 0 20px; }
 
@@ -339,8 +339,7 @@ p {
 .header__row-top {
   height: 48px;
   display: flex;
-  align-items: center;
-  justify-content: space-between; }
+  align-items: center; }
 
 .header__list {
   display: flex;
@@ -348,18 +347,39 @@ p {
   justify-content: space-between; }
 
 .header__item {
-  margin: 0px 0px 0px 45px; }
+  margin: 0px 0px 0px 29px; }
   .header__item:first-child {
     margin: 0; }
+  .header__item:nth-child(2) {
+    padding-left: 19px; }
+  .header__item:nth-child(3) {
+    padding-left: 19px; }
+  .header__item:nth-child(4) {
+    padding-left: 30px;
+    border-left: 1px solid #ffffff; }
+  .header__item:nth-child(5) {
+    padding-left: 19px; }
+  .header__item:nth-child(6) {
+    padding-left: 21px; }
+  .header__item:nth-child(7) {
+    padding-left: 25px; }
+  .header__item:nth-child(8) {
+    padding-left: 24px;
+    border-left: 1px solid #ffffff; }
+  .header__item:nth-child(9) {
+    padding-left: 23px; }
 
 .header__link {
   color: #ffffff; }
+
+.header__contacts {
+  margin-left: 51px; }
 
 .header__middle {
   background-color: #e8e7e7; }
 
 .header__row-middle {
-  height: 74px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -372,7 +392,7 @@ p {
 
 .header__logo-text {
   vertical-align: bottom;
-  margin-left: 8px;
+  margin-left: 1px;
   color: #171717;
   font-size: 33px;
   line-height: 1.2; }
@@ -385,6 +405,7 @@ p {
   text-transform: uppercase; }
 
 .header__search-panel {
+  margin-left: 59px;
   flex-basis: 60%; }
 
 .header__portal-link {
@@ -404,7 +425,15 @@ p {
   max-width: 145px; }
 
 .header__cart-left {
+  position: relative;
+  top: -6px;
+  left: 5px;
   margin-right: 5px; }
+
+.header__cart-right {
+  position: relative;
+  top: 3px;
+  left: 12px; }
 
 .header__cart-count {
   display: block;
@@ -431,13 +460,16 @@ p {
 
 .contacts-header__link {
   display: inline-block;
-  margin: 0px 0px 0px 45px;
+  margin-right: 10px;
   color: #ffffff; }
   .contacts-header__link img {
     display: inline-block;
     margin-right: 5px; }
-  .contacts-header__link:first-child {
+  .contacts-header__link:last-child {
     margin: 0; }
+  .contacts-header__link_phone {
+    position: relative;
+    left: 26px; }
 
 .panel-search__form {
   display: flex; }
@@ -464,7 +496,7 @@ p {
   border-left: 4px solid transparent; }
 
 .panel-search__input {
-  width: 60%;
+  width: 83%;
   border: 1px solid #e8e7e7; }
 
 .panel-search__btn-search {
@@ -476,16 +508,40 @@ p {
   outline: none; }
 
 .bottom-header {
-  height: 130px;
+  height: 98px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   align-self: center; }
   .bottom-header__link {
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #343434; }
+    .bottom-header__link:nth-child(1) {
+      margin: 0; }
+    .bottom-header__link:nth-child(2) {
+      margin-left: 65px; }
+    .bottom-header__link:nth-child(3) {
+      margin-left: 36px; }
+    .bottom-header__link:nth-child(4) {
+      margin-left: 29px; }
+    .bottom-header__link:nth-child(5) {
+      margin-left: 21px; }
+    .bottom-header__link:nth-child(6) {
+      margin-left: 34px; }
+    .bottom-header__link:nth-child(7) {
+      margin-left: 47px; }
+    .bottom-header__link:nth-child(8) {
+      margin-left: 52px; }
+    .bottom-header__link:nth-child(9) {
+      margin-left: 61px; }
+    .bottom-header__link:nth-child(10) {
+      margin-left: 51px; }
+    .bottom-header__link:nth-child(11) {
+      margin-left: 5px;
+      position: relative;
+      left: 22px; }
 
 @media (min-width: 991.98px) {
   .menu__link:hover {
@@ -504,13 +560,13 @@ p {
     align-self: flex-start;
     padding: 25px 0px 0px 0px; } }
 
-@media (max-width: 1583px) {
+@media (max-width: 1570px) {
   .actions-header li {
-    margin: 0px 1.89514vw 0px 0px; }
+    margin: 0px 1.91083vw 0px 0px; }
   .info-header__column {
-    padding: 0px 1.89514vw 0px 0px; } }
+    padding: 0px 1.91083vw 0px 0px; } }
 
-@media (max-width: 1595px) {
+@media (max-width: 1582px) {
   .actions-header__item {
     padding: 0px 0px 0px 30px; }
   .menu__list {
