@@ -74,6 +74,9 @@
     &__cart-price
         color: #171717
         display: block
+    &__bottom
+        box-shadow: 4px 6px 18px rgba(0, 0, 0, 0.11)
+        background-color: #ffffff
 
 
         
@@ -82,8 +85,12 @@
 
 .contacts-header
     &__link
+        display: inline-block
         margin: 0px 0px 0px 45px
         color: #ffffff
+        img 
+            display: inline-block
+            margin-right: 5px
         &:first-child
             margin: 0
 
@@ -120,3 +127,15 @@
         background-color: #ffaf2d
         border: 1px solid #e8e7e7
         outline: none
+
+.bottom-header
+    height: 130px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    align-self: center
+    &__link
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: #343434 
