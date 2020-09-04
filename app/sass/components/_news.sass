@@ -1,0 +1,70 @@
+.news
+    padding-top: 160px
+    padding-left: 129px
+    &__title
+        font-size: 40px
+        margin-bottom: 43px
+    &__body 
+        display: flex
+        justify-content: space-between
+    &__left
+        flex-basis: 32%
+    &__right
+        flex-basis: 60%
+
+.left-news
+    &__img  
+        max-width: 489px
+        margin-bottom: 24px
+    &__create
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 4px
+    &__time
+        color: #777777
+    &__author
+        color: #00aa4b
+    &__link
+        color: $textcolor
+        line-height: 36px
+        font-size: 24px
+        &-text 
+            font-family: "MyriadProEx", sans-serif
+            margin-bottom: 63px
+    &__btn
+        font-family: "MyriadProEx", sans-serif
+        color: $textcolor
+        border-radius: 40px
+        border: 2px solid $textcolor
+        padding: 11px 40px
+        &:hover
+            color: #ffaf2d
+            border: 2px solid #ffaf2d
+
+
+.right-news
+    &__item
+        display: flex
+        align-items: center
+        height: 26%
+        width: 87%
+        // height: 168px
+        margin-bottom: 34px
+    &__img
+        height: 168px
+    //    width: 25%
+    &__block
+        width: 75%
+        margin-left: 10px
+    &__title
+        display: block
+        font-size: 24px
+        color: $textcolor
+        margin-bottom: 10px
+    &__text
+        font-family: "MyriadProEx", sans-serif
+
+
+.right-news__item .left-news__create 
+    margin-bottom: 0
