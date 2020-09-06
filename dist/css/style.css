@@ -720,11 +720,13 @@ a:hover {
   margin-bottom: 0; }
 
 .recommend {
-  padding-top: 10px; }
+  padding-top: 17px; }
   .recommend__title {
     text-align: center;
     font-size: 40px;
-    color: #232323; }
+    line-height: 30px;
+    color: #232323;
+    margin-bottom: 20px; }
   .recommend__subtitle {
     margin: 0 auto;
     text-align: center;
@@ -742,19 +744,21 @@ a:hover {
     margin-left: 10px; }
 
 .left-rec {
-  padding: 70px 70px 0px 70px;
+  padding: 58px 70px 0px 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff; }
   .left-rec__brand {
     text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 10px; }
+    font-size: 20px; }
   .left-rec__title {
-    margin-bottom: 27px; }
+    font-size: 30px;
+    margin-bottom: 13px; }
   .left-rec__subtitle {
-    margin-bottom: 40px; }
+    text-align: center;
+    width: 282px;
+    margin-bottom: 30px; }
 
 .right-rec {
   display: flex;
@@ -767,12 +771,15 @@ a:hover {
 .top-rec {
   display: flex;
   height: 60%;
-  padding-top: 120px;
   padding-right: 140px;
   background-color: #232323; }
   .top-rec__img {
-    width: 190px;
+    margin-top: 32px;
+    width: 424px;
     margin-right: 20px; }
+  .top-rec__block {
+    margin-top: 110px;
+    padding-left: 20px; }
   .top-rec__brand {
     font-size: 20px;
     color: #ffffff;
